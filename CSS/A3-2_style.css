@@ -1,3 +1,26 @@
 html {
     font-family: sans-serif;
   }
+
+div {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    /*Calculated to 1.125 rem for 18px based on base 
+    of 1rem=16px which is the browser default font size*/
+    font-size: 1.125rem;
+    background-color: #ff0000;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000000;
+    border-radius: 15px;
+    border: 1px solid #B30000;
+    background: linear-gradient(to bottom right, rgba(0,0,0,0) 0%, 
+     rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2) 100%), red;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5),
+    inset 3px 3px 5px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.4);
+
+}
