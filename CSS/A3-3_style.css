@@ -1,4 +1,7 @@
-
+/*Import font-face for use*/
+@import url('https://fonts.googleapis.com/css2?family=Graduate&display=swap');
+/*Import a pleasing body font*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 * {
     box-sizing: border-box;
   }
@@ -41,4 +44,88 @@
     border-bottom: 5px solid #a66;
   }
   
-  
+  html{
+    font-size: 10px; /*Site wide font size of 10px*/
+    font-family: "Arvo", serif; /*Site wide font for body text*/
+  }
+  h1,h2,h3,h4,h5{
+    font-family: "Graduate", serif; /*Set the headings to a pleasing font*/
+    line-height: 1.3; /*Line height for appropriate spacing*/
+  }
+  h1{
+    font-size: 2.5rem; /*Set an appropriate font size*/
+    text-align: center; /*Align top line heading to the center of the page*/
+  }
+  h2{
+    font-size: 2rem; /*Set an appropriate font size*/
+  }
+  h3{
+    font-size: 1.75rem; /*Set an appropriate font size*/
+  }
+  h4{
+    font-size: 1.5rem; /*Set an appropriate font size*/
+  }
+  h5{
+    font-size: 1.25rem; /*Set an appropriate font size*/
+  }
+  section :is(h1, h2, h3, h4, h5) + p{
+    text-indent: 20px; /*Set a text indentation for each section after a heading*/
+  }
+  body{
+    font-size: 1.1rem; /*Set an appropriate font size*/
+    line-height: 1.6; /*Set appropriate line spacing*/
+    letter-spacing: 0.05em; /*Set appropriate letter spacing*/
+    word-spacing: 0.065em; /*Set appropriate word spacing*/
+  }
+  footer{
+    font-size: 0.95rem; /*Set an appropriate font size*/
+    line-height: 1.3; /*Set appropriate line spacing*/
+  }
+  a:hover{
+    color: #7d5a46;
+    text-decoration: none;
+  }
+  a{
+    color: #a66;
+    outline: none;
+  }
+  a:visited{
+    color: #303f3c;
+  }
+  a:focus{
+    color: #d7902c;
+  }
+  a:active{
+    text-shadow: 2px 2px 4px #303f3c;
+    transform: scale(0.88);
+  }
+  p a::after{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url('../images/A3_images/external-link-52.png');
+    background-size: contain;
+  }
+  li, ul, ol{
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  nav li{
+    width: 150px;
+    height: 50px;
+    border: 2px solid #a66;
+    margin: 20px auto;
+    margin-left: 0px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
