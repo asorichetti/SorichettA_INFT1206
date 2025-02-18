@@ -54,6 +54,7 @@ header {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
+  overflow: visible
 }
 
 body > * {
@@ -135,4 +136,59 @@ aside img {
 
 footer {
   margin-top: 10px;
+}
+
+/* || General setup for dropdown menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  background-color: #3725856a;
+}
+
+.nav-menu li {
+  position: relative; /* Added to ensure that the dropdown menu is positioned correctly */
+}
+
+.nav-menu li a {
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-menu li:hover {
+  background-color: #6142ed6a;
+}
+
+/* Dropdown Menu */
+.dropdown{
+  position: relative;
+}
+.dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute; /* Position it below the parent li */
+  left: 0;
+  top: 100%; /* Ensures it appears directly below the parent link */
+  background: rgba(55, 37, 133, 0.85);
+  opacity: 1;
+ 
+  margin-bottom: 15px;
+  min-width: 160px;
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Show dropdown when the parent is hovered */
+}
+
+.dropdown-menu li:hover {
+  background-color: #6142ed6a;
 }
