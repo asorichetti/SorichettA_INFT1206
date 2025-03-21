@@ -9,7 +9,7 @@ const imageHolder = ["images/pic1.jpg", "images/pic2.jpg", "images/pic3.jpg", "i
 /* Declaring the alternative text for each image file */
 const imageAlts = ["A close up image of a human eye", "Flowing sandstone similar to waves", "A close up of purple and white flowers", "Egyptian stone artwork and hieroglyphs", "A butterfly on a green leaf"];
 /* Looping through images */
-for (let i = 0; i<5; i++){
+for (let i = 0; i<imageHolder.length; i++){
 const newImage = document.createElement('img');
 newImage.setAttribute('src', imageHolder[i]);
 newImage.setAttribute('alt', imageAlts[i]);
@@ -20,3 +20,15 @@ newImage.addEventListener('click', e => {
 });
 }
 /* Wiring up the Darken/Lighten button */
+btn.addEventListener('click', () => {
+    const buttonClassHold = btn.getAttribute('class');
+    if (buttonClassHold == 'dark'){
+        btn.setAttribute('class', 'light');
+        btn.textContent = 'Lighten';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.50)';
+    } else {
+        btn.setAttribute('class', 'dark');
+        btn.textContent = 'Dark';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0)';
+    }
+});
