@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: rgba(221, 221, 238, 0.689);
 }
 
 body {
@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: green;
+  background-color: rgb(211, 230, 211);
 }
 
 article, footer, .secondary {
