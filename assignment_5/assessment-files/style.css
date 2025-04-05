@@ -6,7 +6,7 @@ html, body {
 }
 
 html {
-  font-size: 10px;
+  font-size: 12px;
   background-color: rgba(221, 221, 238, 0.689);
 }
 
@@ -45,7 +45,7 @@ h3 {
 }
 
 p, li, table {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   line-height: 1.5;
 }
 
@@ -173,7 +173,7 @@ audio {
 /* Comments styling */
 
 .comments {
-  background-color: #def;
+  background-color: rgb(211, 230, 211);
   padding: 10px;
 }
 
@@ -181,11 +181,11 @@ audio {
   cursor: pointer;
 }
 
-.comments font[size="6"] {
+.comments h2 {
   font-size: 2rem;
 }
 
-.comments font[size="6"]:nth-of-type(2) {
+.comments h2:nth-of-type(2) {
   margin-bottom: 0;
 }
 
